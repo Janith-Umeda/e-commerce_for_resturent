@@ -1,0 +1,206 @@
+body {
+    min-height: 75rem;
+    padding-top: 3.9rem;
+}  
+
+.brand_logo{
+    border-radius: 50%;
+}
+
+.nav-effect{
+    background: rgba(0, 0, 0, 0.557);
+    backdrop-filter:blur(50px);
+}
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+
+@media (min-width: 992px) {
+    .rounded-lg-3 { border-radius: .3rem; }
+}
+
+.card-cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px !important;
+    width: 300px ;
+    transition: 0.5s;
+}
+
+.txt-hover{
+    opacity: 0;
+    transition: 1s;
+}
+
+.txt-hover:hover{
+    opacity: 1;
+}
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+  
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+    letter-spacing: -.05rem;
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.hearo-img{
+    object-fit: cover;
+}
+
+.resturents_sec{
+    background-image: url('../images/texures/paisley.webp');
+}
+
+.contact-sec-bg{
+    background-image: url('https://random.imagecdn.app/900/1350');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+
+.contact-us-bg{
+    background-image: url('../images/texures/email-pattern.webp');
+}
+
+.contactf-info{
+    background-color: rgba(0, 0, 0, 0.259);
+    backdrop-filter: blur(10px);
+}
+
+.contactf-items > li{
+    color: white;
+    font-size: 20px;
+}
+
+.contactf-items > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.contactf-items > li > a:hover{
+    color: rgb(225, 225, 225);
+    transform: translateX(20px);
+    border-bottom: 1px solid white;
+}
+
+.card-hover:hover{
+    height: 510px !important;
+    width: 310px ;
+    transform: translateX(-5px);
+}
+
+.card-cover > div{
+    transition: 0.5s;
+    height: 500px !important;
+    width: 300px ;
+}
+
+.card-cover > div:hover{
+    height: 510px !important;
+    width: 310px ;
+    transform: translateX(-5px);
+    backdrop-filter: blur(2px);
+}
+
+.nav-txt{
+    border-bottom: 1px solid white;
+}
+
+.btn-toggle {
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .65);
+    background-color: transparent;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, .85);
+  background-color: #d2f4ea;
+}
+
+.btn-toggle::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+    color: rgba(0, 0, 0, .85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+}
+    .btn-toggle-nav a:hover,
+    .btn-toggle-nav a:focus {
+    background-color: #d2f4ea;
+}
+
+.scrollarea {
+    overflow-y: auto;
+}
+
+.sevices-bg{
+    background-image: url('../images/texures/white_wall_hash.webp');
+}
+
+.resp-table{
+    overflow-y: auto;
+    max-height: 520px;
+
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.rem-tr{
+    transition: 1s;
+}
+
+.rem-tr[rem="true"]{
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.img-placeholder{
+    background-image: url("../images/img-lazyloading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
