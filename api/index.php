@@ -18,7 +18,7 @@
 
     $routes = [
         "/api/products"=>'products',
-        "/mejolaweb/api/products"=>"products"
+        "/e-commerce_for_resturent/api/products"=>"products"
     ];
 
     if (array_key_exists($uri,$routes)){
