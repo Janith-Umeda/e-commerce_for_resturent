@@ -12,6 +12,7 @@
         $user = $env['SUSER'];
         $psw = $env['SPSW'];
         $db = $env['SDB'];
+        echo '<script>alert()</script>';
     }
 
     try{
