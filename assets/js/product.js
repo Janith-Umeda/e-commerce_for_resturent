@@ -44,7 +44,7 @@ function addtocart(elm){
 
 function fetchproductitems(){
     XHR(
-        '../api/products',
+        `${window.origin}/api/products`,
         'POST',
         {
             "filter":"ratings",

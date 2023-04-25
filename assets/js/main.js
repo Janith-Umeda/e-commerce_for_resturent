@@ -47,7 +47,7 @@ cartbtn.onclick = fetchcartitem;
 
 function fetchcartitem(){
     XHR(
-        'http://localhost/mejolaweb/api/products',
+        `${window.origin}/api/products`,
         'POST',
         {
             "mode":"cart",
