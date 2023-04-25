@@ -12,8 +12,8 @@
         $user = $env['SUSER'];
         $psw = $env['SPSW'];
         $db = $env['SDB'];
-        echo '<script>alert()</script>';
     }
+    echo '<script>alert('.$_SERVER['HOST_NAME'].')</script>';
 
     try{
         $conn = new PDO("mysql:host=$host;dbname=$db",$user,$psw);
