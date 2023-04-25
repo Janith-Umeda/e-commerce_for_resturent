@@ -7,6 +7,13 @@
     $psw = $env['PSW'];
     $db = $env['DB'];
 
+    if($_SERVER['HOST_NAME'] === 'resturent.softgalle.com'){
+        $host = $env['SHOST'];
+        $user = $env['SUSER'];
+        $psw = $env['SPSW'];
+        $db = $env['SDB'];
+    }
+
     try{
         $conn = new PDO("mysql:host=$host;dbname=$db",$user,$psw);
     }catch(Exception $e){
